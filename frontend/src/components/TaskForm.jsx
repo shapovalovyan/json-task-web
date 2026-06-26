@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useTask } from "../TaskProvider";
 
-export default function TaskForm({ addTask }) {
+export default function TaskForm() {
+  const { addTask } = useTask();
   const [title, setTitle] = useState("");
   const [priority, setPriority] = useState("Low");
   const [deadLine, setDeadLine] = useState("");

@@ -1,9 +1,7 @@
-export default function TaskItem({
-  task,
-  deleteTask,
-  completeTask,
-  isOverDueFlag,
-}) {
+import { useTask } from "../TaskProvider";
+
+export default function TaskItem({ task }) {
+  const { deleteTask, completeTask, isOverDueFlag } = useTask();
   const { title, priority, deadLine, id, completed } = task;
 
   return (
