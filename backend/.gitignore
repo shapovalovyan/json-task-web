@@ -1,0 +1,49 @@
+venv/
+env/
+.venv/
+ENV/
+
+# Байт-код Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Логи и временные файлы
+*.log
+*.sqlite
+*.db
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Локальные файлы конфигурации (пароли, ключи API)
+.env
+local_settings.py
+
+# Артефакты сборки и дистрибуции
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Файлы систем и IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
